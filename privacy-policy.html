@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinClip - Privacy Policy</title>
+    <style>
+        :root {
+            --bg-gradient-start: #0f0c29;
+            --bg-gradient-mid: #302b63;
+            --bg-gradient-end: #24243e;
+            --glass-bg: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --glass-shadow: rgba(0, 0, 0, 0.3);
+            --text-primary: #f0f0f5;
+            --text-secondary: rgba(240, 240, 245, 0.7);
+            --text-muted: rgba(240, 240, 245, 0.45);
+            --accent: #7c6aef;
+            --accent-light: #a78bfa;
+            --accent-glow: rgba(124, 106, 239, 0.3);
+            --section-bg: rgba(255, 255, 255, 0.05);
+            --section-hover: rgba(255, 255, 255, 0.08);
+            --divider: rgba(255, 255, 255, 0.1);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-mid) 50%, var(--bg-gradient-end) 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Background decoration */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 20%, rgba(124, 106, 239, 0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(167, 139, 250, 0.06) 0%, transparent 50%),
+                        radial-gradient(circle at 50% 50%, rgba(124, 106, 239, 0.03) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px 20px 60px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 20px 32px;
+            margin-bottom: 32px;
+        }
+
+        .app-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+            border-radius: var(--radius-md);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 32px var(--accent-glow);
+            position: relative;
+        }
+
+        .app-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+        }
+
+        .app-name {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .app-version {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .app-developer {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .page-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 24px;
+            color: var(--text-primary);
+        }
+
+        /* Language Switcher */
+        .lang-switcher {
+            display: flex;
+            justify-content: center;
+            margin: 24px 0 8px;
+        }
+
+        .lang-btn {
+            padding: 8px 28px;
+            border: 1px solid var(--glass-border);
+            background: var(--glass-bg);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .lang-btn:first-child {
+            border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+            border-right: none;
+        }
+
+        .lang-btn:last-child {
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+            color: white;
+            border-color: transparent;
+            font-weight: 600;
+            box-shadow: 0 4px 16px var(--accent-glow);
+        }
+
+        .lang-btn:hover:not(.active) {
+            background: var(--section-hover);
+            color: var(--text-primary);
+        }
+
+        /* Glass Card */
+        .glass-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: 36px 32px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px var(--glass-shadow),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        }
+
+        /* Content Sections */
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .section {
+            padding: 24px;
+            margin-bottom: 16px;
+            background: var(--section-bg);
+            border-radius: var(--radius-md);
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            background: var(--section-hover);
+            border-color: var(--divider);
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent-light);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title .icon {
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+            border-radius: var(--radius-sm);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .section-title .icon svg {
+            width: 16px;
+            height: 16px;
+            fill: white;
+        }
+
+        .section p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .section p + p {
+            margin-top: 10px;
+        }
+
+        .highlight {
+            color: var(--accent-light);
+            font-weight: 500;
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--divider);
+            margin: 12px 0;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 32px 20px 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .footer .update-date {
+            margin-top: 8px;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+
+        .footer .copyright {
+            margin-top: 4px;
+            font-size: 0.78rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                padding: 16px 12px 40px;
+            }
+
+            .header {
+                padding: 28px 12px 24px;
+                margin-bottom: 20px;
+            }
+
+            .app-icon {
+                width: 56px;
+                height: 56px;
+                border-radius: 14px;
+                margin-bottom: 16px;
+            }
+
+            .app-icon svg {
+                width: 32px;
+                height: 32px;
+            }
+
+            .app-name {
+                font-size: 1.6rem;
+            }
+
+            .page-title {
+                font-size: 1.25rem;
+            }
+
+            .glass-card {
+                padding: 20px 16px;
+                border-radius: var(--radius-md);
+            }
+
+            .section {
+                padding: 18px 16px;
+                border-radius: var(--radius-sm);
+            }
+
+            .section-title {
+                font-size: 1rem;
+            }
+
+            .section p {
+                font-size: 0.9rem;
+            }
+
+            .lang-btn {
+                padding: 7px 22px;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .glass-card {
+                padding: 16px 12px;
+            }
+
+            .section {
+                padding: 14px 12px;
+            }
+        }
+
+        /* Smooth transitions */
+        .content-section {
+            animation: fadeIn 0.35s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="app-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                    <line x1="9" y1="12" x2="15" y2="12"/>
+                    <line x1="9" y1="16" x2="13" y2="16"/>
+                </svg>
+            </div>
+            <div class="app-name">PinClip</div>
+            <div class="app-version">v1.2.1</div>
+            <div class="app-developer">PinClip Studio</div>
+            <div class="page-title" data-zh="隐私政策" data-en="Privacy Policy">隐私政策</div>
+        </div>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            <button class="lang-btn" data-lang="en" onclick="switchLang('en')">English</button>
+        </div>
+
+        <!-- Glass Card -->
+        <div class="glass-card">
+
+            <!-- Chinese Content -->
+            <div class="content-section active" id="content-zh">
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </span>
+                        信息收集
+                    </div>
+                    <p>PinClip <span class="highlight">不收集任何个人数据</span>。我们高度重视您的隐私，应用运行期间不会采集、传输或存储任何个人信息。</p>
+                    <p>所有剪贴板内容仅保存在您的设备本地，应用不会访问您的通讯录、位置信息、相机、麦克风或其他任何系统服务。</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7zm3-1h10c1 0 1 0 1 1v10c0 1 0 1-1 1H7c-1 0-1 0-1-1V7c0-1 0-1 1-1z"/><rect x="7" y="9" width="10" height="1.5" rx="0.75"/><rect x="7" y="12.5" width="7" height="1.5" rx="0.75"/></svg>
+                        </span>
+                        数据存储
+                    </div>
+                    <p>PinClip 使用 <span class="highlight">SQLite 本地数据库</span> 存储您的剪贴板数据。所有数据均保存在您的设备上，不会通过网络传输。</p>
+                    <p>为保持应用高效运行，应用启动时会自动清理 <span class="highlight">超过 7 天的非置顶</span> 剪贴板内容。已置顶的内容将被永久保留，直到您手动删除。</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.12v4.7c0 4.83-3.23 9.36-7 10.58-3.77-1.22-7-5.75-7-10.58V6.3l7-3.12z"/><path d="M10 12l2 2 4-4"/></svg>
+                        </span>
+                        权限说明
+                    </div>
+                    <p>PinClip 仅使用以下系统权限：</p>
+                    <p><span class="highlight">剪贴板读取权限</span> — 用于监听和读取系统剪贴板内容，以便您能够管理和快速访问复制过的文本。这是 PinClip 的核心功能所需权限。</p>
+                    <p>除此之外，PinClip 不请求、不使用任何其他系统权限。</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+                        </span>
+                        第三方服务
+                    </div>
+                    <p>PinClip <span class="highlight">不使用任何第三方服务</span>。应用不集成任何数据分析工具、广告 SDK、社交登录插件或任何其他第三方组件。</p>
+                    <p>您的数据完全由您自己掌控，不存在任何数据共享或数据交换行为。</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V8z"/></svg>
+                        </span>
+                        数据安全
+                    </div>
+                    <p>PinClip 的所有数据均 <span class="highlight">存储在您的本地设备上</span>，不会上传到任何服务器。应用不包含任何网络通信功能，因此不存在数据泄露的风险。</p>
+                    <p>您的剪贴板数据完全在您的控制之下，卸载应用后所有数据将被自动清除。</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </span>
+                        儿童隐私
+                    </div>
+                    <p>PinClip 不针对 13 岁以下儿童进行设计或营销。由于本应用不收集任何个人数据，因此不存在儿童个人信息保护方面的特殊风险。</p>
+                    <p>如果您是家长或监护人，对儿童使用本应用有任何疑问，欢迎通过下方联系方式与我们沟通。</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+                        </span>
+                        政策更新
+                    </div>
+                    <p>我们可能会不时更新本隐私政策。更新后的政策将在本页面发布，并修改页面底部的"最后更新日期"。</p>
+                    <p>建议您定期查看本页面以了解最新的隐私保护信息。继续使用 PinClip 即表示您同意遵守更新后的隐私政策。</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </span>
+                        联系方式
+                    </div>
+                    <p>如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：</p>
+                    <p><span class="highlight">邮箱：pinclip.studio@gmail.com</span></p>
+                    <p>我们将在收到您的消息后尽快回复。</p>
+                </div>
+
+            </div>
+
+            <!-- English Content -->
+            <div class="content-section" id="content-en">
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </span>
+                        Information Collection
+                    </div>
+                    <p>PinClip <span class="highlight">does not collect any personal data</span>. We take your privacy seriously, and the app does not collect, transmit, or store any personal information during operation.</p>
+                    <p>All clipboard content is stored solely on your local device. The app does not access your contacts, location, camera, microphone, or any other system services.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7zm3-1h10c1 0 1 0 1 1v10c0 1 0 1-1 1H7c-1 0-1 0-1-1V7c0-1 0-1 1-1z"/><rect x="7" y="9" width="10" height="1.5" rx="0.75"/><rect x="7" y="12.5" width="7" height="1.5" rx="0.75"/></svg>
+                        </span>
+                        Data Storage
+                    </div>
+                    <p>PinClip uses a <span class="highlight">SQLite local database</span> to store your clipboard data. All data is kept on your device and is never transmitted over the network.</p>
+                    <p>To maintain optimal app performance, the app will <span class="highlight">automatically clean up non-pinned clipboard content older than 7 days</span> each time it starts. Pinned content is permanently retained until you manually delete it.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.12v4.7c0 4.83-3.23 9.36-7 10.58-3.77-1.22-7-5.75-7-10.58V6.3l7-3.12z"/><path d="M10 12l2 2 4-4"/></svg>
+                        </span>
+                        Permissions
+                    </div>
+                    <p>PinClip requires only the following system permission:</p>
+                    <p><span class="highlight">Clipboard Read Access</span> — Used to monitor and read system clipboard content so you can manage and quickly access copied text. This is essential for PinClip's core functionality.</p>
+                    <p>Beyond this, PinClip does not request or use any other system permissions.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+                        </span>
+                        Third-Party Services
+                    </div>
+                    <p>PinClip <span class="highlight">does not use any third-party services</span>. The app does not integrate any analytics tools, advertising SDKs, social login plugins, or any other third-party components.</p>
+                    <p>Your data is entirely under your own control, and there is no data sharing or data exchange of any kind.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V8z"/></svg>
+                        </span>
+                        Data Security
+                    </div>
+                    <p>All PinClip data is <span class="highlight">stored locally on your device</span> and is never uploaded to any server. The app does not include any network communication functionality, eliminating any risk of data breaches.</p>
+                    <p>Your clipboard data is fully under your control. All data is automatically deleted when you uninstall the app.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </span>
+                        Children's Privacy
+                    </div>
+                    <p>PinClip is not designed or marketed for children under 13 years of age. Since this app does not collect any personal data, there are no special risks regarding children's personal information protection.</p>
+                    <p>If you are a parent or guardian with questions about children's use of this app, please feel free to contact us using the information below.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+                        </span>
+                        Policy Updates
+                    </div>
+                    <p>We may update this privacy policy from time to time. The updated policy will be posted on this page, and the "Last Updated" date at the bottom will be revised accordingly.</p>
+                    <p>We recommend that you review this page periodically to stay informed about our privacy practices. Continued use of PinClip constitutes your acceptance of the updated privacy policy.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </span>
+                        Contact Us
+                    </div>
+                    <p>If you have any questions or suggestions regarding this privacy policy, please contact us at:</p>
+                    <p><span class="highlight">Email: pinclip.studio@gmail.com</span></p>
+                    <p>We will respond to your inquiry as soon as possible.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="update-date" data-zh="最后更新日期：2025年5月24日" data-en="Last Updated: May 24, 2025">最后更新日期：2025年5月24日</div>
+            <div class="copyright">&copy; 2025 PinClip Studio. All rights reserved.</div>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(function(btn) {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+
+            // Update content sections
+            document.querySelectorAll('.content-section').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById('content-' + lang).classList.add('active');
+
+            // Update page title
+            var titleEl = document.querySelector('.page-title');
+            titleEl.textContent = titleEl.dataset[lang];
+
+            // Update footer date
+            var dateEl = document.querySelector('.update-date');
+            dateEl.textContent = dateEl.dataset[lang];
+
+            // Update HTML lang attribute
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+
+            // Update page title
+            document.title = 'PinClip - ' + (lang === 'zh' ? '隐私政策' : 'Privacy Policy');
+        }
+    </script>
+</body>
+</html>
