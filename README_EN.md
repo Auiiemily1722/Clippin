@@ -4,8 +4,6 @@
 
 **A lightweight, gorgeous Windows clipboard manager with fluid animations and Mica/Acrylic aesthetics.**
 
-Built with Vibe Coding & fine-tuned with human craftsmanship.
-
 [简体中文](README.md) · [English](README_EN.md) · [繁體中文](README_ZH-TW.md) · [日本語](README_JA.md)
 
 [![GitHub release](https://img.shields.io/github/v/release/Auiiemily1722/PinClip?style=flat-square)](https://github.com/Auiiemily1722/PinClip/releases)

@@ -4,8 +4,6 @@
 
 **一款轻量、精美的 Windows 剪贴板管理工具，拥有丝滑动画与 Mica/Acrylic 磨砂玻璃美学。**
 
-由 Vibe Coding 注入灵魂，由人类手工打磨细节。
-
 [简体中文](README.md) · [English](README_EN.md) · [繁體中文](README_ZH-TW.md) · [日本語](README_JA.md)
 
 [![GitHub release](https://img.shields.io/github/v/release/Auiiemily1722/PinClip?style=flat-square)](https://github.com/Auiiemily1722/PinClip/releases)

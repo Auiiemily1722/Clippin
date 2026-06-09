@@ -2,9 +2,7 @@
 
 # PinClip
 
-**A lightweight, gorgeous Windows clipboard manager with fluid animations and Mica/Acrylic aesthetics.**
-
-Built with Vibe Coding & fine-tuned with human craftsmanship.
+**軽量で美しい Windows クリップボードマネージャー。フルイドアニメーションと Mica/Acrylic の美学を備えています。**
 
 [简体中文](README.md) · [English](README_EN.md) · [繁體中文](README_ZH-TW.md) · [日本語](README_JA.md)
 
