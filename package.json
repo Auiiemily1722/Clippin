@@ -1,0 +1,87 @@
+{
+  "name": "clippin",
+  "version": "1.2.1",
+  "description": "轻量级剪贴板历史记录工具",
+  "author": "Clippin",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:portable": "electron-builder --win portable",
+    "build:installer": "electron-builder --win nsis",
+    "build": "electron-builder --win",
+    "build:store": "electron-builder --win appx"
+  },
+  "dependencies": {
+    "clipboard-event": "^1.6.0",
+    "pdfkit": "^0.18.0",
+    "sax": "^1.6.0",
+    "sql.js": "^1.12.0"
+  },
+  "devDependencies": {
+    "electron": "^33.4.0",
+    "electron-builder": "^25.1.0"
+  },
+  "build": {
+    "appId": "com.clippin.app",
+    "productName": "Clippin",
+    "directories": {
+      "output": "dist"
+    },
+    "forceCodeSigning": false,
+    "files": [
+      "main.js",
+      "preload.js",
+      "pinclip-ui.html",
+      "assets/**"
+    ],
+    "extraResources": [
+      {
+        "from": "node_modules/sql.js/dist/sql-wasm.wasm",
+        "to": "sql-wasm.wasm"
+      }
+    ],
+    "win": {
+      "target": [
+        "portable",
+        "nsis",
+        "appx"
+      ],
+      "icon": "assets/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerLanguages": [
+        "en_US",
+        "zh_CN",
+        "zh_TW",
+        "ja_JP",
+        "ko_KR"
+      ],
+      "createDesktopShortcut": true,
+      "shortcutName": "Clippin",
+      "deleteAppDataOnUninstall": false,
+      "allowToChangeInstallationDirectory": true,
+      "language": "2052",
+      "createStartMenuShortcut": true,
+      "perMachine": false,
+      "multiLanguageInstaller": true
+    },
+    "portable": {
+      "artifactName": "Clippin_${version}_Portable.exe"
+    },
+    "appx": {
+      "publisher": "CN=61262BB7-F097-446C-84E0-2FAD8CD5A68C",
+      "publisherDisplayName": "Clippin Studio",
+      "identityName": "com.clippin.app",
+      "applicationId": "Clippin",
+      "displayName": "Clippin",
+      "showNameOnTiles": true,
+      "languages": [
+        "en-US",
+        "zh-CN",
+        "zh-TW",
+        "ja-JP"
+      ]
+    }
+  }
+}
