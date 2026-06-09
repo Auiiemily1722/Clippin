@@ -20,12 +20,17 @@ Built with Vibe Coding & fine-tuned with human craftsmanship.
 ### 📋 クリップボードキャプチャ
 何でもコピー — PinClip が瞬時に記憶します。
 
-![クリップボードキャプチャ](github演示/demo-clipboard.gif)
+![クリップボードキャプチャ](github演示/clipboard-capture.gif)
 
-### 🔍 スマート検索 & 複数選択
-ミリ秒で検索。一括ピン留め・削除。
+### 🔍 スマート検索
+ミリ秒で検索、入力してすぐにフィルタリング。
 
-![検索 & 複数選択](github演示/demo-search.gif)
+![スマート検索](github演示/search.gif)
+
+### ✅ 一括操作
+複数選択、ピン留め・削除。効率が倍増。
+
+![一括操作](github演示/batch-ops.gif)
 
 ---
 

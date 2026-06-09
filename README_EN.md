@@ -6,7 +6,7 @@
 
 Built with Vibe Coding & fine-tuned with human craftsmanship.
 
-[简体中文](README.md) · [繁體中文](README_ZH-TW.md) · [日本語](README_JA.md) · [English](README_EN.md)
+[简体中文](README.md) · [English](README_EN.md) · [繁體中文](README_ZH-TW.md) · [日本語](README_JA.md)
 
 [![GitHub release](https://img.shields.io/github/v/release/Auiiemily1722/PinClip?style=flat-square)](https://github.com/Auiiemily1722/PinClip/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
@@ -20,12 +20,17 @@ Built with Vibe Coding & fine-tuned with human craftsmanship.
 ### 📋 Clipboard Capture
 Copy anything — PinClip remembers it instantly.
 
-![Clipboard Capture](github演示/demo-clipboard.gif)
+![Clipboard Capture](github演示/clipboard-capture.gif)
 
-### 🔍 Smart Search & Multi-Select
-Find what you need in milliseconds. Select, pin, or delete in bulk.
+### 🔍 Smart Search
+Find what you need in milliseconds. Filter as you type.
 
-![Search & Multi-Select](github演示/demo-search.gif)
+![Smart Search](github演示/search.gif)
+
+### ✅ Batch Operations
+Multi-select, pin, or delete in bulk. Double the efficiency.
+
+![Batch Operations](github演示/batch-ops.gif)
 
 ---
 

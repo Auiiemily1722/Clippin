@@ -20,12 +20,17 @@
 ### 📋 剪贴板捕获
 复制任何内容 — PinClip 瞬间记住。
 
-![剪贴板捕获](github演示/demo-clipboard.gif)
+![剪贴板捕获](github演示/clipboard-capture.gif)
 
-### 🔍 智能搜索与多选
-毫秒级查找。批量置顶、删除。
+### 🔍 智能搜索
+毫秒级查找，输入即过滤。
 
-![搜索与多选](github演示/demo-search.gif)
+![智能搜索](github演示/search.gif)
+
+### ✅ 批量操作
+多选置顶、删除，效率翻倍。
+
+![批量操作](github演示/batch-ops.gif)
 
 ---
 
