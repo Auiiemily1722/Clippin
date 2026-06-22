@@ -4,9 +4,17 @@
 
 ## 演示
 
-![Clippin 演示](github演示/test1.png)
+### 剪貼簿擷取
 
-![Clippin 介面](github演示/test2.png)
+![Clippin 剪貼簿擷取](github演示/demo-clipboard.gif)
+
+### 搜尋歷史
+
+![Clippin 搜尋歷史](github演示/demo-search.gif)
+
+### 批量操作
+
+![Clippin 批量操作](github演示/batch-ops.gif)
 
 ## 專案概述
 
