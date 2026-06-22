@@ -4,9 +4,17 @@
 
 ## Demo
 
-![Clippin Demo](github演示/test1.png)
+### Clipboard Capture
 
-![Clippin Interface](github演示/test2.png)
+![Clippin Clipboard Capture](github演示/demo-clipboard.gif)
+
+### History Search
+
+![Clippin History Search](github演示/demo-search.gif)
+
+### Batch Operations
+
+![Clippin Batch Operations](github演示/batch-ops.gif)
 
 ## Overview
 
