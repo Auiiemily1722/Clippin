@@ -4,7 +4,7 @@ const path = require("path");
 
 const FONT_PATH = "C:/Windows/Fonts/simhei.ttf";
 const FONT_BOLD_PATH = "C:/Windows/Fonts/simhei.ttf";
-const OUTPUT_PATH = path.join(__dirname, "PinClip_User_Guide.pdf");
+const OUTPUT_PATH = path.join(__dirname, "Clippin_User_Guide.pdf");
 
 function generateCover(doc) {
   doc.rect(0, 0, 595.28, 841.89).fill("#0f1a2e");
@@ -12,17 +12,17 @@ function generateCover(doc) {
   doc.circle(100, 700, 130).fillOpacity(0.06).fill("#4299e1");
   doc.circle(500, 600, 100).fillOpacity(0.04).fill("#63b3ed");
   doc.rect(54, 280, 80, 4).fillOpacity(1).fill("#4299e1");
-  doc.fontSize(48).fillColor("#ffffff").text("PinClip", 54, 310);
+  doc.fontSize(48).fillColor("#ffffff").text("Clippin", 54, 310);
   doc.fontSize(22).fillColor("#a0aec0").text("\u8F7B\u91CF\u7EA7\u526A\u8D34\u677F\u5386\u53F2\u8BB0\u5F55\u5DE5\u5177", 54, 370);
   doc.fontSize(14).fillColor("#718096").text("\u7248\u672C 1.2.1", 54, 420);
   doc.fontSize(11).fillColor("#a0aec0").text("\u5B9E\u65F6\u76D1\u542C  \u00B7  \u5FEB\u901F\u641C\u7D22  \u00B7  \u591A\u8BED\u8A00\u652F\u6301  \u00B7  \u6DF1\u8272\u6A21\u5F0F", 54, 460);
-  doc.fontSize(10).fillColor("#4a5568").text("PinClip Studio", 54, 761.89);
+  doc.fontSize(10).fillColor("#4a5568").text("Clippin Studio", 54, 761.89);
   doc.fontSize(10).fillColor("#4a5568").text("2025 \u7248\u6743\u6240\u6709", 54, 776.89);
 }
 
 function addPageHeader(doc, title, pageNum) {
   doc.roundedRect(54, 20, 487.28, 1, 0.5).fill("#e2e8f0");
-  doc.fontSize(8).fillColor("#a0aec0").text("PinClip \u7528\u6237\u624B\u518C", 54, 26);
+  doc.fontSize(8).fillColor("#a0aec0").text("Clippin \u7528\u6237\u624B\u518C", 54, 26);
   doc.fontSize(8).fillColor("#a0aec0").text("\u7B2C " + pageNum + " \u9875", 54, 26, { align: "right", width: 487.28 });
 }
 
@@ -59,12 +59,12 @@ function writeChapter(doc, chNum, title, sections) {
 }
 
 function main() {
-  var doc = new PDFDocument({ size: "A4", margins: { top: 54, bottom: 54, left: 54, right: 54 }, info: { Title: "PinClip User Guide", Author: "PinClip Studio" } });
+  var doc = new PDFDocument({ size: "A4", margins: { top: 54, bottom: 54, left: 54, right: 54 }, info: { Title: "Clippin User Guide", Author: "Clippin Studio" } });
   doc.registerFont("YaHei", "C:/Windows/Fonts/simhei.ttf");
   doc.registerFont("YaHei-B", "C:/Windows/Fonts/simhei.ttf");
   doc.font("YaHei");
   
-  var ws = fs.createWriteStream("C:\\Users\\22816\\Desktop\\codextest\\PinClip\\PinClip_User_Guide.pdf");
+  var ws = fs.createWriteStream("C:\\Users\\22816\\Desktop\\codextest\\PinClip\\Clippin_User_Guide.pdf");
   doc.pipe(ws);
   
   generateCover(doc);
@@ -89,7 +89,7 @@ function main() {
   
   // Chapter 1
   writeChapter(doc, "1", "\u5FEB\u901F\u5165\u95E8", [
-    { title: "\u5B89\u88C5\u4E0E\u542F\u52A8", body: "PinClip \u662F\u4E00\u6B3E\u8F7B\u91CF\u7EA7\u7684\u526A\u8D34\u677F\u5386\u53F2\u8BB0\u5F55\u5DE5\u5177\uFF0C\u652F\u6301 Windows \u5E73\u53F0\u3002\u5B89\u88C5\u65B9\u5F0F\uFF1A\u4FBF\u643A\u7248\uFF08.exe\uFF09\u4E0B\u8F7D\u540E\u76F4\u63A5\u8FD0\u884C\uFF1B\u5B89\u88C5\u7248\uFF08NSIS\uFF09\u8FD0\u884C\u5B89\u88C5\u7A0B\u5E8F\u6309\u5411\u5BFC\u5B8C\u6210\u3002\u542F\u52A8\u65B9\u5F0F\uFF1A\u53CC\u51FB\u684C\u9762\u5FEB\u6377\u65B9\u5F0F\uFF0C\u6216\u7528\u5168\u5C40\u5FEB\u6377\u952E Ctrl+Shift+V \u547C\u51FA\u4E3B\u7A97\u53E3\u3002\u9996\u6B21\u542F\u52A8\u65F6\u81EA\u52A8\u5F00\u59CB\u76D1\u542C\u526A\u8D34\u677F\uFF0C\u6240\u6709\u6570\u636E\u5B58\u50A8\u5728\u672C\u5730 SQLite \u6570\u636E\u5E93\u4E2D\u3002", tip: "\u4FBF\u643A\u7248\u9002\u5408\u653E\u5728 U \u76D8\u4E2D\u4F7F\u7528\uFF0C\u5B89\u88C5\u7248\u652F\u6301\u5F00\u673A\u81EA\u542F\u52A8\u3002" },
+    { title: "\u5B89\u88C5\u4E0E\u542F\u52A8", body: "Clippin \u662F\u4E00\u6B3E\u8F7B\u91CF\u7EA7\u7684\u526A\u8D34\u677F\u5386\u53F2\u8BB0\u5F55\u5DE5\u5177\uFF0C\u652F\u6301 Windows \u5E73\u53F0\u3002\u5B89\u88C5\u65B9\u5F0F\uFF1A\u4FBF\u643A\u7248\uFF08.exe\uFF09\u4E0B\u8F7D\u540E\u76F4\u63A5\u8FD0\u884C\uFF1B\u5B89\u88C5\u7248\uFF08NSIS\uFF09\u8FD0\u884C\u5B89\u88C5\u7A0B\u5E8F\u6309\u5411\u5BFC\u5B8C\u6210\u3002\u542F\u52A8\u65B9\u5F0F\uFF1A\u53CC\u51FB\u684C\u9762\u5FEB\u6377\u65B9\u5F0F\uFF0C\u6216\u7528\u5168\u5C40\u5FEB\u6377\u952E Ctrl+Shift+V \u547C\u51FA\u4E3B\u7A97\u53E3\u3002\u9996\u6B21\u542F\u52A8\u65F6\u81EA\u52A8\u5F00\u59CB\u76D1\u542C\u526A\u8D34\u677F\uFF0C\u6240\u6709\u6570\u636E\u5B58\u50A8\u5728\u672C\u5730 SQLite \u6570\u636E\u5E93\u4E2D\u3002", tip: "\u4FBF\u643A\u7248\u9002\u5408\u653E\u5728 U \u76D8\u4E2D\u4F7F\u7528\uFF0C\u5B89\u88C5\u7248\u652F\u6301\u5F00\u673A\u81EA\u542F\u52A8\u3002" },
     { title: "\u754C\u9762\u6982\u89C8", body: "\u4E3B\u754C\u9762\u5206\u4E3A\uFF1A\u6807\u9898\u680F\uFF08\u663E\u793A\u540D\u79F0\u548C\u7A97\u53E3\u63A7\u5236\u6309\u94AE\uFF09\u3001\u641C\u7D22\u680F\uFF08\u5B9E\u65F6\u8FC7\u6EE4\uFF09\u3001\u65E5\u671F\u7B5B\u9009\u680F\uFF08\u5168\u90E8/\u4ECA\u5929/\u6628\u5929/\u524D\u5929/\u66F4\u65E9\u524D\uFF09\u3001\u5185\u5BB9\u5217\u8868\uFF08\u5361\u7247\u5F62\u5F0F\u663E\u793A\uFF09\u3001\u5E95\u90E8\u72B6\u6001\u680F\u3002\u7A97\u53E3\u53EF\u62D6\u62FD\u8FB9\u7F18\u81EA\u7531\u8C03\u6574\u5927\u5C0F\u3002", tip: "\u7A97\u53E3\u53EF\u4EE5\u62D6\u62FD\u8FB9\u7F18\u81EA\u7531\u8C03\u6574\u5927\u5C0F\uFF0C\u5185\u5BB9\u5217\u8868\u4F1A\u81EA\u52A8\u9002\u914D\u3002" },
     { title: "\u57FA\u672C\u64CD\u4F5C", body: "\u590D\u5236\uFF1A\u70B9\u51FB\u5361\u7247\u6216\u590D\u5236\u6309\u94AE\uFF0C\u5185\u5BB9\u81EA\u52A8\u590D\u5236\u5230\u526A\u8D34\u677F\uFF0C\u663E\u793A\u52FE\u53F7\u52A8\u753B\u3002\u7F6E\u9876\uFF1A\u70B9\u51FB\u56FE\u9489\u56FE\u6807\uFF0C\u7F6E\u9876\u8BB0\u5F55\u59CB\u7EC8\u663E\u793A\u5728\u6700\u4E0A\u65B9\u3002\u5220\u9664\uFF1A\u70B9\u51FB\u5220\u9664\u6309\u94AE\uFF0C\u6DE1\u51FA\u52A8\u753B\u6D88\u5931\u3002\u5173\u95ED\u7A97\u53E3\uFF1A\u70B9\u51FB\u7EA2\u8272\u6309\u94AE\u6216 Esc \u952E\u3002", tip: "\u7F6E\u9876\u7684\u5185\u5BB9\u4E0D\u4F1A\u88AB\u81EA\u52A8\u6E05\u7406\uFF0C\u9002\u5408\u4FDD\u5B58\u91CD\u8981\u4FE1\u606F\u3002" },
   ]);
@@ -134,16 +134,16 @@ function main() {
   doc.fontSize(24).fillColor("#1a365d").text("\u5E38\u89C1\u95EE\u9898\uFF08FAQ\uFF09", 54, 50);
   doc.rect(54,80,50,3).fill("#2b6cb0");
   var faq = [
-    ["PinClip \u662F\u5426\u652F\u6301\u56FE\u7247\u590D\u5236\uFF1F", "\u652F\u6301\u3002PinClip \u53EF\u4EE5\u8BB0\u5F55 PNG \u548C JPEG \u683C\u5F0F\u7684\u56FE\u7247\uFF0C\u5728\u5217\u8868\u4E2D\u4F1A\u663E\u793A\u7F29\u7565\u56FE\u9884\u89C8\u3002"],
+    ["Clippin \u662F\u5426\u652F\u6301\u56FE\u7247\u590D\u5236\uFF1F", "\u652F\u6301\u3002Clippin \u53EF\u4EE5\u8BB0\u5F55 PNG \u548C JPEG \u683C\u5F0F\u7684\u56FE\u7247\uFF0C\u5728\u5217\u8868\u4E2D\u4F1A\u663E\u793A\u7F29\u7565\u56FE\u9884\u89C8\u3002"],
     ["\u5982\u4F55\u786E\u4FDD\u5F00\u673A\u81EA\u542F\u52A8\uFF1F", "\u6258\u76D8\u53F3\u952E\u83DC\u5355\u4E2D\u9009\u62E9\u201C\u5F00\u673A\u81EA\u542F\u52A8\u201D\u5373\u53EF\u3002"],
     ["\u5386\u53F2\u8BB0\u5F55\u5360\u7528\u591A\u5C11\u7A7A\u95F4\uFF1F", "\u6570\u6708\u7684\u6570\u636E\u4EC5\u5360\u7528\u51E0\u5341 MB\u3002\u7CFB\u7EDF\u81EA\u52A8\u6E05\u7406 7 \u5929\u524D\u7684\u975E\u7F6E\u9876\u8BB0\u5F55\u3002"],
     ["\u5982\u4F55\u4FEE\u6539\u5FEB\u6377\u952E\uFF1F", "\u9ED8\u8BA4 Ctrl+Shift+V\uFF0C\u53EF\u5728\u8BBE\u7F6E\u4E2D\u81EA\u5B9A\u4E49\u4FEE\u6539\u3002"],
     ["\u4F1A\u8054\u7F51\u4E0A\u4F20\u6570\u636E\u5417\uFF1F", "\u4E0D\u4F1A\u3002\u6240\u6709\u6570\u636E\u5B58\u50A8\u5728\u672C\u5730 SQLite \u6570\u636E\u5E93\u4E2D\uFF0C\u5B8C\u5168\u79BB\u7EBF\u5DE5\u4F5C\u3002"],
     ["\u4E3A\u4EC0\u4E48\u6709\u4E9B\u8BB0\u5F55\u672A\u663E\u793A\uFF1F", "\u53EF\u80FD\u8D85\u8FC7\u4E86 7 \u5929\u6E05\u7406\u671F\u9650\u6216\u590D\u5236\u7684\u5185\u5BB9\u7C7B\u578B\u4E0D\u652F\u6301\u3002"],
-    ["\u5982\u4F55\u5BFC\u51FA\u5907\u4EFD\u6570\u636E\uFF1F", "\u76F4\u63A5\u5907\u4EFD PinClip \u7528\u6237\u6570\u636E\u76EE\u5F55\u4E0B\u7684\u6570\u636E\u5E93\u6587\u4EF6\u3002"],
+    ["\u5982\u4F55\u5BFC\u51FA\u5907\u4EFD\u6570\u636E\uFF1F", "\u76F4\u63A5\u5907\u4EFD Clippin \u7528\u6237\u6570\u636E\u76EE\u5F55\u4E0B\u7684\u6570\u636E\u5E93\u6587\u4EF6\u3002"],
     ["\u652F\u6301\u54EA\u4E9B Windows \u7248\u672C\uFF1F", "\u652F\u6301 Windows 10 \u53CA\u4EE5\u4E0A\u7248\u672C\u3002"],
     ["\u591A\u9009\u6A21\u5F0F\u53EF\u4EE5\u5168\u9009\u5417\uFF1F", "\u76EE\u524D\u652F\u6301\u9010\u6761\u52FE\u9009\uFF0C\u53EF\u914D\u5408\u6279\u91CF\u64CD\u4F5C\u4F7F\u7528\u3002"],
-    ["\u5173\u95ED\u7A97\u53E3\u540E\u4E3A\u4EC0\u4E48\u8FD8\u5728\u8FD0\u884C\uFF1F", "PinClip \u8BBE\u8BA1\u4E3A\u540E\u53F0\u5E38\u9A7B\uFF0C\u70B9\u51FB\u5173\u95ED\u53EA\u662F\u9690\u85CF\u5230\u6258\u76D8\u3002\u5B8C\u5168\u9000\u51FA\u9700\u8981\u5728\u6258\u76D8\u83DC\u5355\u4E2D\u70B9\u51FB\u201C\u9000\u51FA\u201D\u3002"],
+    ["\u5173\u95ED\u7A97\u53E3\u540E\u4E3A\u4EC0\u4E48\u8FD8\u5728\u8FD0\u884C\uFF1F", "Clippin \u8BBE\u8BA1\u4E3A\u540E\u53F0\u5E38\u9A7B\uFF0C\u70B9\u51FB\u5173\u95ED\u53EA\u662F\u9690\u85CF\u5230\u6258\u76D8\u3002\u5B8C\u5168\u9000\u51FA\u9700\u8981\u5728\u6258\u76D8\u83DC\u5355\u4E2D\u70B9\u51FB\u201C\u9000\u51FA\u201D\u3002"],
   ];
   y = 110;
   for (var j = 0; j < faq.length; j++) {
@@ -162,7 +162,7 @@ function main() {
   doc.fontSize(24).fillColor("#1a365d").text("\u9644\u5F55\uFF1A\u6280\u672F\u89C4\u683C", 54, 50);
   doc.rect(54,80,50,3).fill("#2b6cb0");
   var specs = [
-    ["\u5E94\u7528\u540D\u79F0", "PinClip"], ["\u7248\u672C\u53F7", "1.2.1"], ["\u5F00\u53D1\u6846\u67B6", "Electron"],
+    ["\u5E94\u7528\u540D\u79F0", "Clippin"], ["\u7248\u672C\u53F7", "1.2.1"], ["\u5F00\u53D1\u6846\u67B6", "Electron"],
     ["\u9002\u7528\u5E73\u53F0", "Windows 10 / Windows 11"], ["\u67B6\u6784\u652F\u6301", "x64"],
     ["\u526A\u8D34\u677F\u76D1\u542C", "Windows AddClipboardFormatListener API"],
     ["\u6570\u636E\u5B58\u50A8", "SQLite\uFF08\u5D4C\u5165\u5F0F\u672C\u5730\u6570\u636E\u5E93\uFF09"],
@@ -186,13 +186,15 @@ function main() {
   doc.addPage();
   doc.rect(0,0,595.28,841.89).fill("#0f1a2e");
   doc.circle(297.64, 420, 160).fillOpacity(0.06).fill("#4299e1").fillOpacity(1);
-  doc.fontSize(20).fillColor("#ffffff").text("PinClip", 54, 380, { align: "center", width: 487.28 });
+  doc.fontSize(20).fillColor("#ffffff").text("Clippin", 54, 380, { align: "center", width: 487.28 });
   doc.fontSize(12).fillColor("#718096").text("\u8F7B\u91CF\u7EA7 \u00B7 \u9AD8\u6548 \u00B7 \u9690\u79C1\u5B89\u5168", 54, 420, { align: "center", width: 487.28 });
-  doc.fontSize(10).fillColor("#4a5568").text("\u611F\u8C22\u60A8\u4F7F\u7528 PinClip", 54, 500, { align: "center", width: 487.28 });
+  doc.fontSize(10).fillColor("#4a5568").text("\u611F\u8C22\u60A8\u4F7F\u7528 Clippin", 54, 500, { align: "center", width: 487.28 });
   
   doc.end();
   ws.on("finish", function() { console.log("PDF OK: " + (fs.statSync(OUTPUT_PATH).size / 1024).toFixed(1) + " KB"); });
 }
 
 main();
+
+
 

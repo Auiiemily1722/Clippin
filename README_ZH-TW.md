@@ -1,102 +1,66 @@
-<div align="center">
+﻿# Clippin - 鍓布绨挎鍙茶閷勫伐鍏?
+[绨￠珨涓枃](README.md) | [English](README_EN.md) | [鏃ユ湰瑾瀅(README_JA.md)
 
-# PinClip
+## 婕旂ず
 
-**一款輕量、精美的 Windows 剪貼簿管理工具，擁有絲滑動畫與 Mica/Acrylic 磨砂玻璃美學。**
+![Clippin 婕旂ず](github婕旂ず/test1.png)
 
-[简体中文](README.md) · [English](README_EN.md) · [繁體中文](README_ZH-TW.md) · [日本語](README_JA.md)
+![Clippin 鐣岄潰](github婕旂ず/test2.png)
 
-[![GitHub release](https://img.shields.io/github/v/release/Auiiemily1722/PinClip?style=flat-square)](https://github.com/Auiiemily1722/PinClip/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+## 灏堟姒傝堪
 
-</div>
+涓€鍊嬬従浠ｅ寲鐨勫壀璨肩翱姝峰彶瑷橀寗绠＄悊宸ュ叿锛屾帯鐢ㄧ幓鐠冩摤鎱嬶紙Glassmorphism锛夎ō瑷堣獮瑷€銆?
+## 鎶€琛撴＇
 
----
+- **鍓嶇**锛欻TML + CSS + JavaScript锛堝柈涓€妾旀锛?- **寰岀**锛欵lectron
+- **璩囨枡搴?*锛歋QLite (sql.js)
 
-## ✨ 演示
+## 鍓嶇妾旀
 
-### 📋 剪貼簿捕獲
-複製任何內容 — PinClip 瞬間記住。
+- `pinclip-ui.html` - 瀹屾暣鐨勫墠绔粙闈?
+### 鍓嶇鍔熻兘
 
-![剪貼簿捕獲](github演示/clipboard-capture.gif)
-
-### 🔍 智能搜尋
-毫秒級查找，輸入即過濾。
-
-![智能搜尋](github演示/search.gif)
-
-### ✅ 批量操作
-多選置頂、刪除，效率翻倍。
-
-![批量操作](github演示/batch-ops.gif)
-
----
-
-## 🎯 為什麼選擇 PinClip？
-
-| 功能 | 說明 |
+| 鍔熻兘 | 瑾槑 |
 |------|------|
-| 🪟 **Mica / Acrylic 玻璃效果** | 原生 Windows 11 磨砂玻璃美學 |
-| ⚡ **即時捕獲** | 自動儲存每一次剪貼簿變化 |
-| 🔍 **即時搜尋** | 輸入即過濾 |
-| 📌 **置頂功能** | 重要內容始終可見 |
-| ✅ **多選操作** | 批量刪除或置頂 |
-| 🌙 **深色/淺色模式** | 跟隨系統或手動切換 |
-| 🌐 **多語言** | 简体中文、English、繁體中文、日本語 |
-| ⌨️ **全域快捷鍵** | `Ctrl+Shift+V` 一鍵喚出 |
-| 🎬 **絲滑動畫** | FLIP 動效，流暢縮放與淡入淡出 |
+| 瑕栫獥鎿嶄綔 | 鍙嫋鏇炽€佸彲绺斁锛堝叓鍚戦倞瑙掕绡€锛?|
+| 鏈€灏忓寲 | macOS 棰ㄦ牸椋涘叆 Windows 宸ヤ綔鍒楀嫊鐣?|
+| 闂滈枆 | 绺斁娣″嚭鍕曠暙 |
+| 鏃ユ泦绡╅伕 | 宸﹀伌涓嬫媺閬告搰锛氬叏閮?浠婂ぉ/鏄ㄥぉ/鍓嶅ぉ/鏇存棭鍓?|
+| 鎼滃皨 | 涓枔鎼滃皨妗嗭紝鍗虫檪閬庢烤 |
+| 鍗＄墖鍒嗙祫 | 鎸夋檪闁撳垎绲勯’绀?|
+| 缃爞 | 榛炴搳閲樺瓙鍦栫ず锛屽崱鐗囩疆闋備甫鎾斁 FLIP 鍕曠暙 |
+| 瑜囪＝ | 榛炴搳鐧界礄鍦栫ず鎴栧崱鐗囩┖鐧借檿锛岃畩鐐哄嬀铏熷嫊鐣紙1.2绉掑緦鎭㈠京锛?|
+| 鍒櫎 | 鍗＄墖鍚戝乏婊戝嚭娑堝け |
+| 闋愯 | 婊戦紶鎳稿仠闀锋枃瀛楀崱鐗囷紝灞曢枊椤ず瀹屾暣鍏у锛堥湩闈㈢幓鐠冩晥鏋滐級 |
+| 鎵归噺鎿嶄綔 | 澶氶伕妯″紡锛屾壒閲忕疆闋?鍒櫎 |
 
----
+### 瑷▓绱扮瘈
 
-## 🛠 技術棧
+- 瑕栫獥鍦撹锛?0px
+- 鐜荤拑鏁堟灉锛歚backdrop-filter: blur(40px) saturate(180%)`
+- 鍕曠暙鏇茬窔锛歚cubic-bezier(0.25, 0.1, 0.25, 1)`
+- 閰嶈壊锛氭繁鑹叉几灞よ儗鏅?+ 鐧借壊鐜荤拑鍗＄墖
+- 绱呴粌缍犳寜閳曪細绱呰壊闂滈枆銆侀粌鑹叉渶灏忓寲銆佺稜鑹茬疆闋傦紙macOS 棰ㄦ牸锛?
+## 瀹夎鍩疯
 
-| 層級 | 技術 |
-|------|------|
-| 介面 | HTML + CSS + JavaScript（單一檔案） |
-| 執行時 | Electron |
-| 資料庫 | SQLite via sql.js（WebAssembly） |
-
----
-
-## 🚀 快速開始
-
-### 下載
-從 [Releases](https://github.com/Auiiemily1722/PinClip/releases) 取得最新便攜版 `.exe` — 無需安裝。
-
-### 從原始碼建構
 ```bash
-git clone https://github.com/Auiiemily1722/PinClip.git
-cd PinClip
 npm install
 npm start
 ```
 
-### 打包
+## 鎵撳寘鐧煎竷
+
 ```bash
-npm run build:portable   # 便攜版
-npm run build:installer # 安裝包
-npm run build           # 全部
+npm run build:installer  # 瀹夎鍖?npm run build:portable   # 渚挎敎鐗?npm run build            # 鍏ㄩ儴
 ```
 
----
+## 鎶€琛撲寒榛?
+- **FLIP 鍕曠暙**锛氭墍鏈夊垪琛ㄦ搷浣滈兘鏈夋祦鏆㈢殑浣嶇疆鍕曠暙
+- **鐜荤拑鎿厠**锛歜ackdrop-filter 瀵︾従姣涚幓鐠冩晥鏋?- **澶氳獮瑷€**锛氭敮鎻寸啊涓?绻佷腑/鏃ユ枃/鑻辨枃
+- **娣辫壊妯″紡**锛氳嚜鍕曡窡闅ㄧ郴绲辨垨鎵嬪嫊鍒囨彌
+- **鍏ㄥ眬蹇€熼嵉**锛欳trl+Shift+V 蹇€熷枤鍑?
+## 鎺堟瑠姊濇
 
-## 🎨 設計細節
+MIT
 
-- **玻璃擬態**：`backdrop-filter: blur(40px) saturate(180%)`
-- **動畫曲線**：`cubic-bezier(0.25, 0.1, 0.25, 1)`
-- **視窗圓角**：10px
-- **macOS 風格控制按鈕**：紅色（關閉）· 黃色（最小化）· 綠色（置頂）
 
----
-
-## 📄 授權條款
-
-[MIT](LICENSE) © 2026 Auiie
-
----
-
-<div align="center">
-
-**覺得 PinClip 好用？給個 ⭐ 吧！**
-
-</div>

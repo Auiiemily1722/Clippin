@@ -1,102 +1,61 @@
-<div align="center">
+﻿# Clippin - 銈儶銉冦儣銉溿兗銉夊饱姝寸鐞嗐儎銉笺儷
 
-# PinClip
+[绨′綋涓枃](README.md) | [English](README_EN.md) | [绻侀珨涓枃](README_ZH-TW.md)
 
-**軽量で美しい Windows クリップボードマネージャー。フルイドアニメーションと Mica/Acrylic の美学を備えています。**
+## 銉囥儮
 
-[简体中文](README.md) · [English](README_EN.md) · [繁體中文](README_ZH-TW.md) · [日本語](README_JA.md)
+![Clippin 銉囥儮](github婕旂ず/test1.png)
 
-[![GitHub release](https://img.shields.io/github/v/release/Auiiemily1722/PinClip?style=flat-square)](https://github.com/Auiiemily1722/PinClip/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+![Clippin 銈ゃ兂銈裤兗銉曘偋銉笺偣](github婕旂ず/test2.png)
 
-</div>
+## 姒傝
 
----
+銈般儵銈广儮銉笺儠銈ｃ偤銉狅紙Glassmorphism锛夈儑銈躲偆銉炽倰鎺＄敤銇椼仧銉儉銉炽仾銈儶銉冦儣銉溿兗銉夊饱姝寸鐞嗐儎銉笺儷銆?
+## 鎶€琛撱偣銈裤儍銈?
+- **銉曘儹銉炽儓銈ㄣ兂銉?*: HTML + CSS + JavaScript锛堝崢涓€銉曘偂銈ゃ儷锛?- **銉愩儍銈偍銉炽儔**: Electron
+- **銉囥兗銈裤儥銉笺偣**: SQLite (sql.js)
 
-## ✨ デモ
+## 姗熻兘
 
-### 📋 クリップボードキャプチャ
-何でもコピー — PinClip が瞬時に記憶します。
-
-![クリップボードキャプチャ](github演示/clipboard-capture.gif)
-
-### 🔍 スマート検索
-ミリ秒で検索、入力してすぐにフィルタリング。
-
-![スマート検索](github演示/search.gif)
-
-### ✅ 一括操作
-複数選択、ピン留め・削除。効率が倍増。
-
-![一括操作](github演示/batch-ops.gif)
-
----
-
-## 🎯 PinClip の特徴
-
-| 機能 | 説明 |
+| 姗熻兘 | 瑾槑 |
 |------|------|
-| 🪟 **Mica / Acrylic ガラス** | ネイティブ Windows 11 のすりガラス美学 |
-| ⚡ **インスタントキャプチャ** | クリップボードの変更を自動保存 |
-| 🔍 **リアルタイム検索** | 入力してすぐにフィルタリング |
-| 📌 **ピン留め** | 重要なアイテムを常に表示 |
-| ✅ **複数選択** | 一括削除・ピン留め |
-| 🌙 **ダーク / ライトモード** | システムに追従 or 手動切替 |
-| 🌐 **多言語対応** | English, 简体中文, 繁體中文, 日本語 |
-| ⌨️ **グローバルホットキー** | `Ctrl+Shift+V` で即座に起動 |
-| 🎬 **滑らかなアニメーション** | FLIPベースのトランジション |
+| 銈︺偅銉炽儔銈︽搷浣?| 銉夈儵銉冦偘鍙兘銆併儶銈点偆銈哄彲鑳斤紙8鏂瑰悜锛?|
+| 鏈€灏忓寲 | macOS銈广偪銈ゃ儷銇偄銉嬨儭銉笺偡銉с兂 |
+| 闁夈仒銈?| 銈广偙銉笺儷銉曘偋銉笺儔銈偊銉堛偄銉嬨儭銉笺偡銉с兂 |
+| 鏃ヤ粯銉曘偅銉偪銉?| 銉夈儹銉冦儣銉€銈︺兂锛氥仚銇广仸/浠婃棩/鏄ㄦ棩/涓€鏄ㄦ棩/銇濄倢浠ュ墠 |
+| 妞滅储 | 銉偄銉偪銈ゃ儬銉曘偅銉偪銉兂銈?|
+| 銈兗銉夈偘銉兗銉楀寲 | 鏅傞枔鍒ャ伀銈般儷銉笺儣琛ㄧず |
+| 銉斻兂鐣欍倎 | 銉斻兂銈偆銈炽兂銇с偒銉笺儔銈掑浐瀹氾紙FLIP銈儖銉°兗銈枫儳銉筹級 |
+| 銈炽償銉?| 銈炽償銉笺偄銈ゃ偝銉炽伨銇熴伅銈兗銉夈倰銈儶銉冦偗銆併儊銈с儍銈優銉笺偗銈儖銉°兗銈枫儳銉?|
+| 鍓婇櫎 | 銈兗銉夈亴宸︺伀銈广儵銈ゃ儔銇椼仸娑堛亪銈?|
+| 銉椼儸銉撱儱銉?| 闀枫亜銉嗐偔銈广儓銈掋儧銉愩兗銇у睍闁嬶紙銈般儵銈瑰姽鏋滐級 |
+| 涓€鎷搷浣?| 瑜囨暟閬告姙銉兗銉夈€佷竴鎷償銉崇暀銈?鍓婇櫎 |
 
----
+### 銉囥偠銈ゃ兂瑭崇窗
 
-## 🛠 技術スタック
+- 銈︺偅銉炽儔銈﹁涓? 10px
+- 銈般儵銈瑰姽鏋? `backdrop-filter: blur(40px) saturate(180%)`
+- 銈儖銉°兗銈枫儳銉虫洸绶? `cubic-bezier(0.25, 0.1, 0.25, 1)`
+- 閰嶈壊: 銉€銉笺偗銈般儵銉囥兗銈枫儳銉宠儗鏅?+ 鐧姐亜銈般儵銈广偒銉笺儔
+- 淇″彿姗熴儨銈裤兂: 璧ゃ仹闁夈仒銈嬨€侀粍銇ф渶灏忓寲銆佺窇銇с償銉崇暀銈侊紙macOS銈广偪銈ゃ儷锛?
+## 銈ゃ兂銈广儓銉笺儷
 
-| レイヤー | 技術 |
-|---------|------|
-| UI | HTML + CSS + JavaScript（単一ファイル） |
-| ランタイム | Electron |
-| データベース | SQLite via sql.js（WebAssembly） |
-
----
-
-## 🚀 クイックスタート
-
-### ダウンロード
-[Releases](https://github.com/Auiiemily1722/PinClip/releases) から最新のポータブル版 `.exe` を取得 — インストール不要。
-
-### ソースからビルド
 ```bash
-git clone https://github.com/Auiiemily1722/PinClip.git
-cd PinClip
 npm install
 npm start
 ```
 
-### パッケージ化
+## 銉撱儷銉?
 ```bash
-npm run build:portable   # ポータブル版
-npm run build:installer # インストーラー
-npm run build           # 両方
-```
+npm run build:installer  # 銈ゃ兂銈广儓銉笺儵銉?npm run build:portable   # 銉濄兗銈裤儢銉増
+npm run build            # 銇欍伖銇?```
 
----
+## 鐗瑰敬
 
-## 🎨 デザイン詳細
+- **FLIP銈儖銉°兗銈枫儳銉?*: 銇欍伖銇︺伄銉偣銉堟搷浣溿伀銈广儬銉笺偤銇綅缃偄銉嬨儭銉笺偡銉с兂
+- **銈般儵銈广儮銉笺儠銈ｃ偤銉?*: backdrop-filter銇с偣銉兗銈儔銈般儵銈瑰姽鏋?- **澶氳█瑾炲蹇?*: EN / ZH-CN / ZH-TW / JA
+- **銉€銉笺偗銉兗銉?*: 銈枫偣銉嗐儬鑷嫊杩藉緭銇俱仧銇墜鍕曞垏銈婃浛銇?- **銈般儹銉笺儛銉儧銉冦儓銈兗**: Ctrl+Shift+V 銇х礌鏃┿亸璧峰嫊
 
-- **グラスモーフィズム**: `backdrop-filter: blur(40px) saturate(180%)`
-- **アニメーション曲線**: `cubic-bezier(0.25, 0.1, 0.25, 1)`
-- **ウィンドウ角丸**: 10px
-- **macOSスタイルコントロール**: 赤（閉じる）· 黄（最小化）· 緑（ピン留め）
+## 銉┿偆銈汇兂銈?
+MIT
 
----
-
-## 📄 ライセンス
-
-[MIT](LICENSE) © 2026 Auiie
-
----
-
-<div align="center">
-
-**PinClip を気に入ったら、⭐ をお願いします！**
-
-</div>

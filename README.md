@@ -1,102 +1,70 @@
-<div align="center">
+# Clippin - 剪贴板历史记录工具
 
-# PinClip
+[English](README_EN.md) | [繁體中文](README_ZH-TW.md) | [日本語](README_JA.md)
 
-**一款轻量、精美的 Windows 剪贴板管理工具，拥有丝滑动画与 Mica/Acrylic 磨砂玻璃美学。**
+## 演示
 
-[简体中文](README.md) · [English](README_EN.md) · [繁體中文](README_ZH-TW.md) · [日本語](README_JA.md)
+![Clippin 演示](github演示/test1.png)
 
-[![GitHub release](https://img.shields.io/github/v/release/Auiiemily1722/PinClip?style=flat-square)](https://github.com/Auiiemily1722/PinClip/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+![Clippin 界面](github演示/test2.png)
 
-</div>
+## 项目概述
 
----
+一个现代化的剪贴板历史记录管理工具，采用玻璃拟态（Glassmorphism）设计语言。
 
-## ✨ 演示
+## 技术栈
 
-### 📋 剪贴板捕获
-复制任何内容 — PinClip 瞬间记住。
+- **前端**：HTML + CSS + JavaScript（单文件）
+- **后端**：Electron
+- **数据库**：SQLite (sql.js)
 
-![剪贴板捕获](github演示/clipboard-capture.gif)
-
-### 🔍 智能搜索
-毫秒级查找，输入即过滤。
-
-![智能搜索](github演示/search.gif)
-
-### ✅ 批量操作
-多选置顶、删除，效率翻倍。
-
-![批量操作](github演示/batch-ops.gif)
-
----
-
-## 🎯 为什么选择 PinClip？
+## 功能特性
 
 | 功能 | 说明 |
 |------|------|
-| 🪟 **Mica / Acrylic 玻璃效果** | 原生 Windows 11 磨砂玻璃美学 |
-| ⚡ **即时捕获** | 自动保存每一次剪贴板变化 |
-| 🔍 **实时搜索** | 输入即过滤 |
-| 📌 **置顶功能** | 重要内容始终可见 |
-| ✅ **多选操作** | 批量删除或置顶 |
-| 🌙 **深色/浅色模式** | 跟随系统或手动切换 |
-| 🌐 **多语言** | 简体中文、English、繁體中文、日本語 |
-| ⌨️ **全局快捷键** | `Ctrl+Shift+V` 一键唤出 |
-| 🎬 **丝滑动画** | FLIP 动效，流畅缩放与淡入淡出 |
+| 窗口操作 | 可拖拽、可缩放（八向边角调节） |
+| 最小化 | macOS 风格飞入 Windows 任务栏动画 |
+| 关闭 | 缩放淡出动画 |
+| 日历筛选 | 左侧下拉选择：全部/今天/昨天/前天/更早前 |
+| 搜索 | 中间搜索框，实时过滤 |
+| 卡片分组 | 按时间分组显示 |
+| 置顶 | 点击钉子图标，卡片置顶并播放 FLIP 动画 |
+| 复制 | 点击白纸图标或卡片空白处，变为勾号动画（1.2秒后恢复） |
+| 删除 | 卡片向左滑出消失 |
+| 预览 | 鼠标悬停长文本卡片，展开显示完整内容（雾面玻璃效果） |
+| 批量操作 | 多选模式，批量置顶/删除 |
 
----
+## 设计细节
 
-## 🛠 技术栈
+- 窗口圆角：10px
+- 玻璃效果：`backdrop-filter: blur(40px) saturate(180%)`
+- 动画曲线：`cubic-bezier(0.25, 0.1, 0.25, 1)`
+- 配色：深色渐变背景 + 白色玻璃卡片
+- 红黄绿按钮：红色关闭、黄色最小化、绿色置顶（macOS 风格）
 
-| 层级 | 技术 |
-|------|------|
-| 界面 | HTML + CSS + JavaScript（单文件） |
-| 运行时 | Electron |
-| 数据库 | SQLite via sql.js（WebAssembly） |
+## 安装运行
 
----
-
-## 🚀 快速开始
-
-### 下载
-从 [Releases](https://github.com/Auiiemily1722/PinClip/releases) 获取最新便携版 `.exe` — 无需安装。
-
-### 从源码构建
 ```bash
-git clone https://github.com/Auiiemily1722/PinClip.git
-cd PinClip
 npm install
 npm start
 ```
 
-### 打包
+## 打包发布
+
 ```bash
+npm run build:installer  # 安装包
 npm run build:portable   # 便携版
-npm run build:installer # 安装包
-npm run build           # 全部
+npm run build            # 全部
 ```
 
----
+## 技术亮点
 
-## 🎨 设计细节
+- **FLIP 动画**：所有列表操作都有流畅的位置动画
+- **玻璃拟态**：backdrop-filter 实现毛玻璃效果
+- **多语言**：支持简中/繁中/日文/英文
+- **深色模式**：自动跟随系统或手动切换
+- **全局快捷键**：Ctrl+Shift+V 快速唤出
 
-- **玻璃拟态**：`backdrop-filter: blur(40px) saturate(180%)`
-- **动画曲线**：`cubic-bezier(0.25, 0.1, 0.25, 1)`
-- **窗口圆角**：10px
-- **macOS 风格控制按钮**：红色（关闭）· 黄色（最小化）· 绿色（置顶）
+## 许可证
 
----
-
-## 📄 许可证
-
-[MIT](LICENSE) © 2026 Auiie
-
----
-
-<div align="center">
-
-**觉得 PinClip 好用？给个 ⭐ 吧！**
-
-</div>
+MIT
