@@ -1,21 +1,21 @@
-﻿# Clippin - Clipboard History Manager
+# Clippin - Clipboard History Manager
 
-[绠€浣撲腑鏂嘳(README.md) | [绻侀珨涓枃](README_ZH-TW.md) | [鏃ユ湰瑾瀅(README_JA.md)
+[简体中文](README.md) | [繁體中文](README_ZH-TW.md) | [日本語](README_JA.md)
 
 ## Demo
 
-![Clippin Demo](github婕旂ず/test1.png)
+![Clippin Demo](github演示/test1.png)
 
-![Clippin Interface](github婕旂ず/test2.png)
+![Clippin Interface](github演示/test2.png)
 
 ## Overview
 
-A modern clipboard history management tool with Glassmorphism design language.
+Clippin is a lightweight, modern clipboard history manager for Windows. It features a glassmorphism interface, fast search, pinning, batch operations, and a global hotkey for quick access.
 
 ## Tech Stack
 
-- **Frontend**: HTML + CSS + JavaScript (Single File)
-- **Backend**: Electron
+- **Frontend**: HTML + CSS + JavaScript (single-file UI)
+- **Desktop Framework**: Electron
 - **Database**: SQLite (sql.js)
 
 ## Features
@@ -23,24 +23,24 @@ A modern clipboard history management tool with Glassmorphism design language.
 | Feature | Description |
 |---------|-------------|
 | Window Operations | Draggable, resizable (8-direction corners) |
-| Minimize | macOS-style fly-in animation to Windows taskbar |
+| Minimize | macOS-style fly-in animation to the Windows taskbar |
 | Close | Scale fade-out animation |
-| Date Filter | Dropdown: All/Today/Yesterday/Day Before/Earlier |
+| Date Filter | All / Today / Yesterday / Day Before / Earlier |
 | Search | Real-time filtering |
 | Card Grouping | Grouped by time |
-| Pin | Click pin icon to pin card with FLIP animation |
-| Copy | Click copy icon or card, shows checkmark animation (1.2s) |
+| Pin | Pin cards with FLIP animation |
+| Copy | Copy by clicking the icon or card body with visual feedback |
 | Delete | Card slides left and disappears |
-| Preview | Hover to expand long text (glass effect) |
-| Batch Operations | Multi-select mode, batch pin/delete |
+| Preview | Hover to expand long text |
+| Batch Operations | Multi-select mode with batch pin / delete |
 
-### Design Details
+## Design Details
 
 - Window corner radius: 10px
 - Glass effect: `backdrop-filter: blur(40px) saturate(180%)`
 - Animation curve: `cubic-bezier(0.25, 0.1, 0.25, 1)`
-- Color scheme: Dark gradient background + White glass cards
-- Traffic lights: Red close, Yellow minimize, Green pin (macOS style)
+- Color scheme: Dark gradient background + white glass cards
+- Control buttons: Red close, yellow minimize, green pin (macOS style)
 
 ## Installation
 
@@ -54,18 +54,18 @@ npm start
 ```bash
 npm run build:installer  # Installer
 npm run build:portable   # Portable
-npm run build            # All
+npm run build:store      # Microsoft Store / AppX
+npm run build            # All targets
 ```
 
 ## Highlights
 
-- **FLIP Animation**: Smooth position animations for all list operations
-- **Glassmorphism**: Backdrop-filter for frosted glass effect
-- **Multi-language**: EN / ZH-CN / ZH-TW / JA
-- **Dark Mode**: Auto-follow system or manual toggle
-- **Global Hotkey**: Ctrl+Shift+V to quick launch
+- **FLIP Animations** for smooth list reordering
+- **Glassmorphism UI** with frosted glass effects
+- **Multi-language Support**: English / ZH-CN / ZH-TW / JA
+- **Dark Mode** with system follow or manual switching
+- **Global Hotkey**: `Ctrl + Shift + V`
 
 ## License
 
 MIT
-
