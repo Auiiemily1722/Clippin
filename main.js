@@ -529,7 +529,7 @@ function createWindow() {
     }
   });
 
-  mainWindow.loadFile(path.join(__dirname, "pinclip-ui.html"));
+  mainWindow.loadFile(path.join(__dirname, "clippin-ui.html"));
 
   nativeTheme.on("updated", () => {
     if (mainWindow && !mainWindow.isDestroyed()) {
