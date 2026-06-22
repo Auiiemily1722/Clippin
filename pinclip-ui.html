@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PinClip</title>
+  <title>Clippin</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1143,7 +1143,7 @@
 
       currentLang = lang || currentLang;
 
-      localStorage.setItem("pinclip-lang", currentLang);
+      localStorage.setItem("clippin-lang", currentLang);
 
 
 
@@ -1953,11 +1953,11 @@
         window.electronAPI.getLanguage().then(lang => {
           applyLanguage(lang);
         }).catch(() => {
-          const saved = localStorage.getItem('pinclip-lang') || 'zh-CN';
+          const saved = localStorage.getItem('clippin-lang') || 'zh-CN';
           applyLanguage(saved);
         });
       } else {
-        const saved = localStorage.getItem('pinclip-lang') || 'zh-CN';
+        const saved = localStorage.getItem('clippin-lang') || 'zh-CN';
         applyLanguage(saved);
       }
 
