@@ -4,9 +4,17 @@
 
 ## デモ
 
-![Clippin デモ](github演示/test1.png)
+### クリップボード取得
 
-![Clippin インターフェース](github演示/test2.png)
+![Clippin クリップボード取得](github演示/demo-clipboard.gif)
+
+### 履歴検索
+
+![Clippin 履歴検索](github演示/demo-search.gif)
+
+### 一括操作
+
+![Clippin 一括操作](github演示/batch-ops.gif)
 
 ## 概要
 
